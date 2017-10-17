@@ -1,0 +1,35 @@
+/*
+	CSS file for "Giveaway" page.
+*/
+
+/*
+	Colors
+	======
+	
+	Header/Active Page Link/Footer :	#474747 gray
+	Main Panel/Side Panel/Tweets Text:	#000080 navy blue
+	Background/Tweet Box:				#add8e6 light blue
+	Slogan:								#4169e1 royal blue
+	Main Text/Nav Bar/Footer Border:	#dedede 
+	Link Color:							#cecece
+*/
+
+#main_panel {
+	position: relative;
+	width: 1040px;
+}
+
+#contact_form {
+	margin-top: 50px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact_form td {
+	padding-right: 15px;
+}
+
+#contact_form input {
+	width: 300px;
+}

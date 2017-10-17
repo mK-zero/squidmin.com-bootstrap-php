@@ -1,0 +1,206 @@
+/* Table of Contents
+--------------------------------------------
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+-------------------------------------------- */
+
+/* General Content
+-------------------------------------------- */
+.main{padding-top:3%;}
+.row{padding: 2% 0;}
+.green{background-color: #7accc8;}
+.navyblue{background-color: #000080;}
+.gray{background-color: #474747;}
+.lightblue{background-color: #add8e6;}
+.royalblue{background-color: #4169e1;}
+.lightgray{background-color: #dedede;}
+.lightgray2{background-color: #cecece;}
+
+/* Typography
+-------------------------------------------- */
+body{
+	font-family: 'Abel',sans-serif;
+	font-size: 1.5em;
+	color: #000;
+}
+h2{
+	font-family: 'Satisfy', cursive;
+	font-size: 3em;
+	margin: 0.67em;
+}
+h2.bio{color: #3f7f7c;}
+p.bio{color: #fff;}
+
+/* Header & Navigation
+-------------------------------------------- */
+header.main_nav{
+	padding: 1% 0;
+	display: block;
+}
+.logo{
+	margin: 5% auto;
+	text-align: center;
+}
+.logo a{
+	font-size: 3em;
+	color: #fff;
+	text-decoration: none;
+	border: 3px solid #fff;
+	text-transform: uppercase;
+	padding: 2px 10px 0 10px;
+	margin: 0;
+}
+.logo a:hover{
+	background-color: #fff;
+	color: #7accc8;
+}
+#top_header {
+	position: relative;
+	z-index: 2; /* Allows the top_header to be above the bottom_header for transparency. */
+	overflow: auto;
+	background-color: rgba(91, 91, 91, .5);
+	-webkit-box-shadow: 0px 1px 3px 1px;
+   	   -moz-box-shadow: 0px 1px 3px 1px;
+			box-shadow: 0px 1px 3px 1px;
+}
+#bottom_header {
+	position: relative;
+	margin-top: -61px;
+	overflow: auto;
+	background: #474747;
+	-webkit-box-shadow: 0px 1px 3px 0px;
+   	   -moz-box-shadow: 0px 1px 3px 0px;
+			box-shadow: 0px 1px 3px 0px;
+
+}
+#nav {
+	overflow: auto;
+	height: 40px;
+	background: #dedede;
+	-webkit-box-shadow: 0px 1px 3px 1px;
+   	   -moz-box-shadow: 0px 1px 3px 1px;
+			box-shadow: 0px 1px 3px 1px;
+}
+
+#nav ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#nav li {
+	float: left;
+	width: 220px;
+	line-height: 40px;
+	text-align: center;
+	background: #dedede;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+#nav a {
+	text-decoration: none;
+	background: #dedede;
+	display: block;
+	color: #474747;
+}
+
+#nav a:hover {
+	background: #474747;
+	color: #dedede;
+}
+/* Images & Media
+-------------------------------------------- */
+img{max-width: 100%;}
+img.avatar{
+	border-radius: 400px;
+	border: 5px solid #fff;
+	max-width: 25%;
+}
+img:hover{opacity: 0.8;}
+
+/* Footer
+-------------------------------------------- */
+ul.social{
+	display: block;
+	margin: 5% 0;
+	list-style-type: none;
+	text-align: center;
+}
+ul.social li{
+	font-size: 3em;
+	display: inline;
+	padding: 0 2%;
+}
+ul.social li a{
+	color: #666;
+}
+ul.social li.facebook a:hover{color: rgb(59,89,152);}
+ul.social li.twitter a:hover{color: rgb(0,172,237);}
+ul.social li.instagram a:hover{color: rgb(81,127,237);}
+ul.social li.youtube a:hover{color: rgb(187,0,0);}
+ul.social li.flickr a:hover{color: rgb(255,0,132);}
+ul.social li.linkedin a:hover{color: rgb(0,123,182);}
+
+p.copyright{
+	text-align: center;
+	color: #666;
+	font-size: 1em;
+}
+#footer_nav ul {
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer_nav li {
+	float: left;
+	padding-left: 50px;
+	position: relative;
+}
+
+#footer_nav a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #cecece;
+}
+
+#footer_nav a:hover {
+	color: #000080;
+}
+#top_footer {
+	position: relative;
+	margin-top: 50px;
+	height: 50px;
+	background: #dedede;
+	-webkit-box-shadow: 0px -1px 3px 1px;
+	   -moz-box-shadow: 0px -1px 3px 1px;
+			box-shadow: 0px -1px 3px 1px;
+}
+#footer {
+	position: relative;
+	overflow: auto;
+	text-align: center;
+	background: #474747;
+	-webkit-box-shadow: 0px -1px 3px;
+	   -moz-box-shadow: 0px -1px 3px;
+			box-shadow: 0px -1px 3px;
+
+}
+
+/* Media Queries
+-------------------------------------------- */
+/* Larger than mobile */
+@media (max-width: 479px) {
+	.logo a{font-size: 2em;}
+	.main{padding-top: 15%;}
+	.portfolio img{margin-bottom: 10%;}
+	img.avatar{margin-top: 15%;}
+	h2.bio{font-size: 2.5em;}
+	p.bio{font-size: 1.25em; color: #3f7f7c;}
+	ul.social li a{font-size: .75em;}
+}
